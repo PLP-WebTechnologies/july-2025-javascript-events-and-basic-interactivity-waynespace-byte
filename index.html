@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Interactive Sections</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <input type="text"`     onfocus="this.style.background='lightblue';"
+        onblur="this.style.background='';"
+        placeholder="Focus The Header To Change Color">
+        <br>
+    <button id="themeBtn">Light/Dark Mode</button>
+    </header> 
+    <br>
+    <input type="text" id="onInput" placeholder="Type Here">
+    <br>
+    <section id="formSection">
+    <h2 onmouseover="this.innerText='Jisajili Hapa';">Sign Up</h2>
+    <form id="signUp"> 
+        <label onmouseover="this.style.color='red';" for="name">Name:<input type="text" id="name" required/><span id="nameError"></span></label>
+        <label onmouseover="this.style.color='red';" for="email">Email:<input type="text" id="email" required/><span id="emailError"></span></label>
+        <label onmouseover="this.style.color='red';" for="password">Password:<input type="password" id="password" required/><span id="passwordError"></span></label>
+        <input type="submit" value="Submit">
+    </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
